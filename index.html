@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="w-full bg-white shadow px-4 py-3">
+    <div class="flex items-center justify-between w-full">
+
+      <!-- Hamburger (Tablet only) -->
+      <div class="hidden md:flex lg:hidden flex-1 justify-start">
+        <img src="./hamburger.png" alt="Menu" class="h-6 cursor-pointer">
+      </div>
+
+      <!-- Logo -->
+      <div class="flex items-center flex-1 justify-start md:justify-center lg:justify-start">
+        <img src="./logo-image.png" alt="Logo" class="h-8">
+      </div>
+
+      <!-- Menu (Desktop only) -->
+      <nav class="hidden lg:flex gap-6 flex-1 justify-center">
+        <a href="#" class="hover:text-purple-600">Home</a>
+        <a href="#" class="hover:text-purple-600">Discover</a>
+        <a href="#" class="hover:text-purple-600">Special Deals</a>
+        <a href="#" class="hover:text-purple-600">Contact</a>
+      </nav>
+
+      <!-- Auth (Tablet + Desktop) -->
+      <div class="hidden md:flex items-center gap-3 flex-1 justify-end">
+        <a href="#" class="hover:text-purple-600">Log In</a>
+        <button class="bg-purple-600 text-white px-4 py-1 rounded hover:bg-purple-700">Sign Up</button>
+      </div>
+
+      <!--Hamburger (Mobile only) -->
+      <div class="flex md:hidden justify-end flex-1">
+        <img src="./hamburger.png" alt="Menu" class="h-6 cursor-pointer">
+      </div>
+    </div>
+  </header>
+</body>
+
+</html>
